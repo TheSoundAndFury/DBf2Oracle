@@ -1,8 +1,7 @@
 # dbf2Oracle
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b8064cbaa6754ce4b945c7b83c551369)](https://www.codacy.com/app/TheSoundAndFury/DBf2Oracle?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheSoundAndFury/DBf2Oracle&amp;utm_campaign=Badge_Grade)
-[![Dependency Status](https://www.versioneye.com/user/projects/58b74d1a9fd69a003e8d2c5a/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/58b74d1a9fd69a003e8d2c5a)
-
+[![Dependency Status](https://www.versioneye.com/user/projects/5a7b02070fb24f074d7c57ef/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5a7b02070fb24f074d7c57ef)
 DBF 2 Oracle is small command line tool for converting DBF files top MySQL dump format. Based on dbf2SQL by xmovrave2 https://github.com/xmorave2/dbf2sql.git
 
 # Installation
