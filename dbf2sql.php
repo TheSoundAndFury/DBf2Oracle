@@ -4,8 +4,8 @@ require __DIR__ . '/vendor/autoload.php';
 
 use XBase\Table;
 use XBase\Record;
-use Ulrichsg\Getopt\Getopt;
-use Ulrichsg\Getopt\Option;
+use GetOpt\Getopt;
+use GetOpt\Option;
 
 function usage($errormessage = "error")
 {
@@ -17,10 +17,10 @@ function usage($errormessage = "error")
     echo "Default destination directory is source file's one.\n\n";
 }
 
-$encOption = new Option('e', 'encoding', Getopt::REQUIRED_ARGUMENT);
-$batchOption = new Option('b', 'batchsize', Getopt::REQUIRED_ARGUMENT);
-$destdirOption = new Option('d', 'destinationdir', Getopt::REQUIRED_ARGUMENT);
-$getopt = new Getopt([$encOption, $batchOption, $destdirOption]);
+$encOption = new Option('e', 'encoding', GetOpt::REQUIRED_ARGUMENT);
+$batchOption = new Option('b', 'batchsize', GetOpt::REQUIRED_ARGUMENT);
+$destdirOption = new Option('d', 'destinationdir', GetOpt::REQUIRED_ARGUMENT);
+$getopt = new GetOpt([$encOption, $batchOption, $destdirOption]);
 $getopt->parse();
 $encoding = $getopt["encoding"] ? $getopt["encoding"] : "UTF-8";
 $destDir = $getopt["destinationdir"] ? $getopt["destinationdir"] : false;
